@@ -27,7 +27,7 @@ class Complejo():
         realAnterior = self.real
         imaginarioAnterior = self.imaginario
 
-        self.real = realAnterior*b.real - imaginarioAnterior*b.imaginario
-        self.imaginario = imaginarioAnterior*b.imaginario + imaginarioAnterior*b.real
+        self.real = (realAnterior*b.real) - (imaginarioAnterior*b.imaginario)
+        self.imaginario = (imaginarioAnterior*b.real) + (realAnterior*b.imaginario)
 
     

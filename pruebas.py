@@ -48,10 +48,10 @@ class TestComplejo(unittest.TestCase):
         
         c = complejo.Complejo(0, 1)
         d = complejo.Complejo(0, 1)
-        d.mult(d)
+        d.mult(c)
         
-        self.assertEqual(d.real, 0.0)
-        self.assertEqual(d.imaginario,- 1.0)
+        self.assertEqual(d.real, -1.0)
+        self.assertEqual(d.imaginario, 0.0)
         
         e = complejo.Complejo(455, -21)
         f = complejo.Complejo(9, 6)
